@@ -1,0 +1,31 @@
+FORMAT: 1A
+HOST: http://messages31.apiblueprint.org/
+
+# messages
+
+Messages is a simple API to access messages for users.
+
+## Messages Collection [/messages]
+
+### List All Messsages [GET]
+
++ Request
+
+    + Header
+    
+            Authorization: dXNlcjpwYXNzd29yZA==
+            x-api-version: 1.0
+
++ Response 200 (application/json)
+
+        [
+            {
+                "message_id": "1",
+                "message_body": "this is test 1",
+                
+            },
+            {
+                "message_id": "2",
+                "message_body":"this is test 2",
+            }
+        ]
